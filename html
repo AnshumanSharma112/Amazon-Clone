@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">amazon<span>.in</span></div>
+    <input type="text" placeholder="Search Amazon" class="search-box" />
+    <button class="search-btn">Search</button>
+    <div class="cart" onclick="addToCart()">
+      🛒 Cart (<span id="cart-count">0</span>)
+    </div>
+  </header>
+
+  <main>
+    <section class="products">
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/81NIli1PuqL._SX679_.jpg" alt="Product" />
+        <h3>iPhone 14</h3>
+        <p>₹68,999</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/61G5JoU9tTL._SL1500_.jpg" alt="Product" />
+        <h3>Samsung Galaxy M14</h3>
+        <p>₹10,999</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/71C5aw2U2FL._SX679_.jpg" alt="Product" />
+        <h3>Boat Airdopes</h3>
+        <p>₹999</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
